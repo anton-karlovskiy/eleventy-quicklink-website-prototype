@@ -77,8 +77,8 @@ p, ul, address {
 }
 
 .page-header {
-  background: #ffffff;
   text-align: center;
+  background: #ffffff;
   padding-top: 1.6rem;
   border-bottom: 4px solid #46aee8;
 }
@@ -138,146 +138,149 @@ p, ul, address {
 }
 
 .page-header__navigation ul {
-    margin: 0;
-    padding: .5rem 1.5rem 0;
+  margin: 0;
+  padding: .5rem 1.5rem 0;
 }
 
 .page-header__navigation li {
-    display: inline;
-    margin-right: 2rem;
+  display: inline;
+  margin-right: 2rem;
 }
 
 .page-header__navigation li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .page-main {
-    padding: 16px 16px 0px;
-    width: 90%;
-    min-width: 288px;
-    max-width: 750px;
-    margin: 0px auto;
+  padding: 16px 16px 0px;
+  width: 90%;
+  min-width: 288px;
+  max-width: 750px;
+  margin: 0px auto;
 }
 
 .page-main > h1 {
-    color: white;
+  color: white;
 }
 
 .page-main > ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* TODO: not used for now */
 /* .button, button, input[type="submit"] {
-    color: #000000;
-    background: #ffffff;
-    border: 2px solid black;
-    padding: 12px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 4px;
-    width: 100%;
-    box-sizing: border-box;
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-appearance: none;
+  color: #000000;
+  background: #ffffff;
+  border: 2px solid black;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-appearance: none;
 }
 
 .button:hover {
-    background: #fdf7ce;
+  background: #fdf7ce;
 }
 
 .button.button__primary,
 button,
 input[type="submit"] {
-    background: #00659d;
-    border: none;
-    max-width: 360px;
+  background: #00659d;
+  border: none;
+  max-width: 360px;
 }
 
 .button.button__primary:hover,
 button:hover,
 input[type="submit"]:hover {
-    background: #46aee8;
+  background: #46aee8;
 }
 
 .button-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
 }
 
 .button-container .button {
-    display: inline-block;
-    margin-right: 16px;
+  display: inline-block;
+  margin-right: 16px;
 }
 
 .button-container .button:last-child {
-    margin-right: 0;
+  margin-right: 0;
 } */
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .back-to-top {
-    opacity: 1;
-    pointer-events: all;
-    position: fixed;
-    bottom: 3rem;
-    right: 3rem;
-    z-index: 9999;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .35);
-    cursor: pointer;
-    border-radius: 50%;
-    transform: translate3d(0, 0, 0);
-    transition: all .3s ease;
+  opacity: 1;
+  pointer-events: all;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 9999;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .35);
+  cursor: pointer;
+  border-radius: 50%;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s ease;
 }
 
 .back-to-top:hover {
-    transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
 }
 
 .back-to-top.hidden {
-    opacity: 0;
-    pointer-events: none;
-    transform: translate3d(300%, 0, 0);
-    transition: all .3s ease;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate3d(300%, 0, 0);
+  transition: all .3s ease;
 }
 
 @media (min-width: 750px) {
-    body {
-        font-size: 1.8rem;
-    }
-    .page-header {
-        padding-top: 0;
-    }
-    .page-header__logo-link {
-        display: inline-block;
-        margin: 0 1.6rem 0 0;
-        width: 250px;
-        vertical-align: bottom;
-    }
-    .page-header nav {
-        display: inline-block;
-    }
-    .page-main {
-        width: 75%;
-    }
+  body {
+    font-size: 1.8rem;
+  }
+  .page-header {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 0;
+  }
+  .page-header__logo-link {
+    display: inline-block;
+    margin: 0 1.6rem 0 0;
+    width: 250px;
+    vertical-align: bottom;
+  }
+  .page-header nav {
+    display: inline-block;
+  }
+  .page-main {
+    width: 75%;
+  }
 }
