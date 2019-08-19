@@ -1,14 +1,6 @@
 {
   "name": "eleventy-quicklink-website",
   "description": "",
-  "tags": [
-    "eleventy",
-    "11ty",
-    "ssr",
-    "static",
-    "glitch",
-    "template"
-  ],
   "version": "1.0.0",
   "scripts": {
     "build": "npx @11ty/eleventy",
@@ -17,5 +9,5 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3"
   },
-  "license": "MIT"
+  "license": "Apache-2.0"
 }

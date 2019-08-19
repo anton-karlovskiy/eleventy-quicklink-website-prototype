@@ -1,12 +1,19 @@
-// docs: https://www.11ty.io/docs/config/
 
+// docs: https://www.11ty.io/docs/config/
 module.exports = function(eleventyConfig) {
-  // eleventyConfig.addFilter( "myFilter", function() {});
  
   return {
+    // ray test touch <
+    // templateFormats: [
+    //   "njk",
+    //   "md",
+    //   "11ty.js"
+    // ],
+    // ray test touch >
+
     dir: {
       input: "src",
-      output: "dist"
+      output: "build"
     }
   };
 };
