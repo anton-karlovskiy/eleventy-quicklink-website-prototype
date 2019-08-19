@@ -1,17 +1,17 @@
 <header class="page-header">
   <a href="{{ '/' | url }}" class="page-header__logo-link">
-      <img src="{{ site.logo | url }}" width="250" height="250" alt="Quicklink Logo"  class="page-header__logo-image" />
+    <img src="{{ site.logo | url }}" width="250" height="250" alt="Quicklink Logo"  class="page-header__logo-image" />
   </a>
   <nav class="page-header__navigation">
     <ul>
       <li>
-          <a href="{{ '/' | url }}" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
+        <a href="{{ '/' | url }}" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
       </li>
       <li>
-          <a href="{{ '/api/' | url }}" {% if page.url == "/api/" %}class="active"{% endif %}>API</a>
+        <a href="{{ '/api/' | url }}" {% if page.url == "/api/" %}class="active"{% endif %}>API</a>
       </li>
       <li>
-          <a href="{{ '/approach/' | url }}" {% if page.url == "/approach/" %}class="active"{% endif %}>Approach</a>
+        <a href="{{ '/approach/' | url }}" {% if page.url == "/approach/" %}class="active"{% endif %}>Approach</a>
       </li>
     </ul>
   </nav>
