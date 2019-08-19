@@ -1,0 +1,35 @@
+{# ray test touch < #}
+<header class="page-header">
+  <a href="{{ '/' | url }}" class="page-header__logo-link">
+      <img src="{{ site.logo | url }}" width="150" height="150" alt="Quicklink Logo"  class="page-header__logo-image" />
+  </a>
+  <nav class="page-header__navigation">
+    <ul>
+      <li>
+          <a href="{{ '/' | url }}" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
+      </li>
+      <li>
+          <a href="{{ '/events/' | url }}" {% if page.url == "/events/" %}class="active"{% endif %}>Events</a>
+      </li>
+      <li>
+          <a href="{{ '/talks/' | url }}" {% if page.url == "/talks/" %}class="active"{% endif %}>Talks</a>
+      </li>
+      <li>
+          <a href="{{ '/speakers/' | url }}" {% if page.url == "/speakers/" %}class="active"{% endif %}>Speakers</a>
+      </li>
+      <li>
+          <a href="{{ '/code-of-conduct/' | url }}" {% if page.url == "/code-of-conduct/" %}class="active"{% endif %}>Code of Conduct</a>
+      </li>
+      <li>
+          <a href="/github" target="_blank" rel="noopener noreferrer">Github</a>
+      </li>
+      <li>
+          <a href="https://twitter.com/quicklink" target="_blank" rel="noopener noreferrer">Twitter</a>
+      </li>
+      <li>
+          <a href="https://www.youtube.com/quicklink" target="_blank" rel="noopener noreferrer">YouTube</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+{# ray test touch > #}
