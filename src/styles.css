@@ -14,7 +14,7 @@
 }
 
 ::selection {
-    background: #f1d608;
+    background: #00659d;
 }
 
 html {
@@ -31,8 +31,6 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
-    background: #333;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 h1,
@@ -66,7 +64,7 @@ a:hover {
 }
 
 a.link__yellow {
-    color: #f1d608;
+    color: #00659d;
 }
 
 p {
@@ -82,13 +80,13 @@ p, ul, address {
     background: #ffffff;
     text-align: center;
     padding-top: 1.6rem;
-    border-bottom: 4px solid #f7df1d;
+    border-bottom: 4px solid #46aee8;
 }
 
 .page-header__logo-link {
     display: block;
     margin: 0 auto;
-    width: 100px;
+    width: 200px;
     border: none;
 }
 
@@ -118,7 +116,7 @@ p, ul, address {
     bottom: 0;
     left: -0.5em;
     right: -0.5em;
-    background-color: #f7df1d;
+    background-color: #46aee8;
     transform-origin: 50% 100%;
     transform: scaleY(0);
     transition: transform 0.15s ease-in-out;
@@ -353,7 +351,9 @@ input[type="submit"]:hover {
     .page-header__logo-link {
         display: inline-block;
         margin: 0 1.6rem 0 0;
-        width: 150px;
+        /* ray test touch < */
+        width: 250px;
+        /* ray test touch > */
         vertical-align: bottom;
     }
     .page-header nav {
