@@ -3,13 +3,13 @@
     font-family: 'Libre Baskerville';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/libre-baskerville-v6-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../assets/fonts/libre-baskerville-v6-latin-regular.eot'); /* IE9 Compat Modes */
     src: local('Libre Baskerville'), local('LibreBaskerville-Regular'),
-         url('../fonts/libre-baskerville-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/libre-baskerville-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/libre-baskerville-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/libre-baskerville-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/libre-baskerville-v6-latin-regular.svg#LibreBaskerville') format('svg'); /* Legacy iOS */
+         url('../assets/fonts/libre-baskerville-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/libre-baskerville-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/libre-baskerville-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/libre-baskerville-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/libre-baskerville-v6-latin-regular.svg#LibreBaskerville') format('svg'); /* Legacy iOS */
     font-display: swap;
 }
 

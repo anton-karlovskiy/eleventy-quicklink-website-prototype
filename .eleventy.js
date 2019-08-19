@@ -4,8 +4,7 @@ const htmlminifier = require('html-minifier');
 
 // docs: https://www.11ty.io/docs/config/
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/img");
-  eleventyConfig.addPassthroughCopy("src/fonts");
+  eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/styles.css");
   eleventyConfig.addPassthroughCopy("src/script.js");
   eleventyConfig.addPassthroughCopy("src/site.webmanifest");
@@ -54,14 +53,6 @@ module.exports = function(eleventyConfig) {
   // });
  
   return {
-    // ray test touch <
-    // templateFormats: [
-    //   "njk",
-    //   "md",
-    //   "11ty.js"
-    // ],
-    // ray test touch >
-
     dir: {
       input: "src",
       output: "build"

@@ -2,5 +2,5 @@
   "title": "quicklink",
   "description": "Faster subsequent page-loads by prefetching in-viewport links during idle time.",
   "baseurl": "",
-  "logo": "/img/logo.png"
+  "logo": "/assets/images/logo.png"
 }
