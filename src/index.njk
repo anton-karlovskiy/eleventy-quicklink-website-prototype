@@ -8,27 +8,28 @@ description: Faster subsequent page-loads by prefetching in-viewport links durin
 </div>
 
 {# ray test touch < #}
-<!--
-  Line highlighting classes (single highlight)
-  Adds `highlight-line-active` class to lines 1,3,4,5 (for line highlighting)
--->
-
-<!-- Nunjucks Template -->
-{% highlight "js 1,3-5" %}
-function myFunction() {
-  // …
-  return true;
-}
+Quickstart:
+{% highlight "js" %}
+<!-- Include quicklink from dist -->
+<script src="https://unpkg.com/quicklink@1.0.0/dist/quicklink.umd.js"></script>
+<!-- Initialize (you can do this whenever you want) -->
+<script>
+quicklink();
+</script>
 {% endhighlight %}
 
-{# <div>
-  <h3>How it works</h3>
-  <p>Quicklink attempts to make navigations to subsequent pages load faster. It:</p>
-  <ul>
-    <li><strong>Detects links within the viewport</strong> (using <a>Intersection Observer</a>)</li>
-    <li><strong>Waits until the browser is idle</strong> (using <a>requestIdleCallback</a>)</li>
-    <li><strong>Checks if the user isn't on a slow connection</strong> (using <code>navigator.connection.effectiveType</code>) or has data-saver enabled (using <code>navigator.connection.saveData</code>)</li>
-    <li><strong>Prefetches URLs to the links</strong> (using <a><code><link rel=prefetch></code></a> or XHR). Provides some control over the request priority (can switch to <code>fetch()</code> if supported).</li>
-  </ul>
-</div> #}
+{{ "For example, you can initialize after the `load` event fires:" | markdown | safe }}
+{% highlight "js" %}
+<script>
+window.addEventListener('load', () =>{
+  quicklink();
+});
+</script>
+{% endhighlight %}
+
+ES Module import:
+{% highlight "js" %}
+import quicklink from "quicklink/dist/quicklink.mjs";
+quicklink();
+{% endhighlight %}
 {# ray test touch > #}
