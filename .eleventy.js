@@ -7,8 +7,7 @@ const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 // docs: https://www.11ty.io/docs/config/
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy("src/themes");
-  eleventyConfig.addPassthroughCopy("src/styles.css");
+  eleventyConfig.addPassthroughCopy("src/styles");
   eleventyConfig.addPassthroughCopy("src/script.js");
   eleventyConfig.addPassthroughCopy("src/site.webmanifest");
   eleventyConfig.addPassthroughCopy("src/browserconfig.xml");
@@ -31,10 +30,10 @@ module.exports = function(eleventyConfig) {
   // eleventyConfig.addTransform('purifycss', async function(content, outputPath) {
   //   if (outputPath.endsWith(".html")) {
   //       return new Promise((resolve) => {
-  //           purifycss(content, ['build/styles.css'], {
+  //           purifycss(content, ['build/styles/main.css'], {
   //               minify: true
   //           }, (css) => {
-  //               resolve(content.replace('<link rel="stylesheet" href="/styles.css">', `<style>${css}</style>`));
+  //               resolve(content.replace('<link rel="stylesheet" href="/styles/main.css">', `<style>${css}</style>`));
   //           });
   //       });
   //   };
