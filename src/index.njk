@@ -11,34 +11,8 @@ description: Faster subsequent page-loads by prefetching in-viewport links durin
 {{ "### Faster subsequent page-loads by prefetching in-viewport links during idle time." | markdown | safe }}
 {{ "### Once initialized, `quicklink` will automatically prefetch URLs for links that are in-viewport during idle time." | markdown | safe }}
 
-Quickstart:
-{% highlight "js" %}
-<!-- Include quicklink from dist -->
-<script src="https://unpkg.com/quicklink@1.0.0/dist/quicklink.umd.js"></script>
-<!-- Initialize (you can do this whenever you want) -->
-<script>
-quicklink();
-</script>
-{% endhighlight %}
+{% include "components/quickstart-usage.njk" %}
 
-{{ "For example, you can initialize after the `load` event fires:" | markdown | safe }}
-{% highlight "js" %}
-<script>
-window.addEventListener('load', () =>{
-  quicklink();
-});
-</script>
-{% endhighlight %}
-
-{{ "For use with [node](http://nodejs.org) and [npm](https://npmjs.com):" | markdown | safe }}
-{% highlight "js" %}
-npm install --save quicklink
-{% endhighlight %}
-
-ES Module import:
-{% highlight "js" %}
-import quicklink from "quicklink/dist/quicklink.mjs";
-quicklink();
-{% endhighlight %}
+{% include "components/npm-usage.njk" %}
 
 {% include "components/use-with.njk" %}
