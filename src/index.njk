@@ -7,7 +7,10 @@ description: Faster subsequent page-loads by prefetching in-viewport links durin
   <h2>{{ site.subtitle }}</h2>
 </div>
 
-{# ray test touch < #}
+{{ "## **Summary**" | markdown | safe }}
+{{ "### Faster subsequent page-loads by prefetching in-viewport links during idle time." | markdown | safe }}
+{{ "### Once initialized, `quicklink` will automatically prefetch URLs for links that are in-viewport during idle time." | markdown | safe }}
+
 Quickstart:
 {% highlight "js" %}
 <!-- Include quicklink from dist -->
@@ -27,9 +30,15 @@ window.addEventListener('load', () =>{
 </script>
 {% endhighlight %}
 
+{{ "For use with [node](http://nodejs.org) and [npm](https://npmjs.com):" | markdown | safe }}
+{% highlight "js" %}
+npm install --save quicklink
+{% endhighlight %}
+
 ES Module import:
 {% highlight "js" %}
 import quicklink from "quicklink/dist/quicklink.mjs";
 quicklink();
 {% endhighlight %}
-{# ray test touch > #}
+
+{% include "components/use-with.njk" %}

@@ -41,6 +41,12 @@ h3 {
   letter-spacing: .6px;
 }
 
+/* ray test touch < */
+/* h2 {
+  border-bottom: 1px solid #eaecef;
+} */
+/* ray test touch > */
+
 h2, h3 {
   margin: 3.2rem 0 1.6rem;
   line-height: 1.5;
@@ -63,8 +69,12 @@ a:hover {
   border-color: transparent;
 }
 
-a.link__yellow {
+a.link__blue {
   color: #00659d;
+}
+
+a.link__silent {
+  border: none;
 }
 
 p {
@@ -285,7 +295,6 @@ input[type="submit"]:hover {
   }
 }
 
-/* ray test touch < */
 /* code block */
 .highlight-line {
   display: inline-block;
@@ -302,4 +311,3 @@ code {
   margin: 0;
   padding: .2em .4em;
 }
-/* ray test touch > */

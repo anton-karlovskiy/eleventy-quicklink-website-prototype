@@ -3,5 +3,27 @@
   "subtitle": "Instant next-page navigations with prefetching",
   "description": "Faster subsequent page-loads by prefetching in-viewport links during idle time.",
   "baseurl": "",
-  "logo": "/assets/images/logo.png"
+  "logo": "/assets/images/logos/quicklink.png",
+  "useWithFrameworks": [
+    {
+      "title": "wordpress",
+      "url": "https://wordpress.org/plugins/quicklink/"
+    },
+    {
+      "title": "drupal",
+      "url": "https://www.drupal.org/project/quicklink/"
+    },
+    {
+      "title": "react",
+      "url": "https://github.com/HOUCe/react-quicklink-component/"
+    },
+    {
+      "title": "angular",
+      "url": "https://github.com/mgechev/ngx-quicklink/"
+    },
+    {
+      "title": "vue",
+      "url": "https://github.com/GoogleChromeLabs/quicklink/"
+    }
+  ]
 }

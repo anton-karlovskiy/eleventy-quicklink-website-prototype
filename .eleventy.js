@@ -43,36 +43,36 @@ module.exports = function(eleventyConfig) {
   // });
 
   // TODO: commented out while dev
-  // eleventyConfig.addTransform('htmlminifier', async function(content, outputPath) {
-  //   if (outputPath.endsWith(".html")) {
-  //       return htmlminifier.minify(content, {
-  //           collapseWhitespace: true,
-  //           minifyCSS: true,
-  //           minifyJS: true,
-  //           removeAttributeQuotes: true,
-  //           removeComments: true,
-  //           removeEmptyAttributes: true,
-  //           removeRedundantAttributes: true,
-  //           removeScriptTypeAttributes: true,
-  //           removeStyleLinkTypeAttributes: true,
-  //           sortAttributes: true,
-  //           sortClassName: true
-  //       })
-  //   };
+  eleventyConfig.addTransform('htmlminifier', async function(content, outputPath) {
+    if (outputPath.endsWith(".html")) {
+        return htmlminifier.minify(content, {
+            collapseWhitespace: true,
+            minifyCSS: true,
+            minifyJS: true,
+            removeAttributeQuotes: true,
+            removeComments: true,
+            removeEmptyAttributes: true,
+            removeRedundantAttributes: true,
+            removeScriptTypeAttributes: true,
+            removeStyleLinkTypeAttributes: true,
+            sortAttributes: true,
+            sortClassName: true
+        })
+    };
 
-  //   return content;
-  // });
+    return content;
+  });
 
   return {
     // ray test touch <
-    // markdownTemplateEngine: "njk",
-    // htmlTemplateEngine: "njk",
+    templateFormats: [
+      "njk",
+      "md"
+    ],
 
-    // templateFormats: [
-    //   "njk",
-    //   "md",
-    //   "html"
-    // ],
+    markdownTemplateEngine: "liquid",
+    htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
     // ray test touch >
 
     dir: {
