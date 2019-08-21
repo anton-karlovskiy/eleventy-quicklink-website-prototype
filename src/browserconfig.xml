@@ -1,10 +1,9 @@
-<!-- TODO: customize for quicklink -->
 <?xml version="1.0" encoding="utf-8"?>
 <browserconfig>
     <msapplication>
         <tile>
             <square150x150logo src="/assets/images/icons/mstile-150x150.png"/>
-            <TileColor>#ff0000</TileColor>
+            <TileColor>#da532c</TileColor>
         </tile>
     </msapplication>
 </browserconfig>
