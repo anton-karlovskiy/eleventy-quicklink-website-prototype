@@ -41,7 +41,6 @@ module.exports = function(eleventyConfig) {
   //   return content;
   // });
 
-  // TODO: commented out while dev
   eleventyConfig.addTransform('htmlminifier', async function(content, outputPath) {
     if (outputPath.endsWith(".html")) {
         return htmlminifier.minify(content, {

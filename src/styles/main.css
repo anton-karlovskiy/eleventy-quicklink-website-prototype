@@ -178,61 +178,6 @@ p, ul, address {
   padding: 0;
 }
 
-/* TODO: not used for now */
-/* .button, button, input[type="submit"] {
-  color: #000000;
-  background: #ffffff;
-  border: 2px solid black;
-  padding: 12px;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 4px;
-  width: 100%;
-  box-sizing: border-box;
-  display: block;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-appearance: none;
-}
-
-.button:hover {
-  background: #fdf7ce;
-}
-
-.button.button__primary,
-button,
-input[type="submit"] {
-  background: #00659d;
-  border: none;
-  max-width: 360px;
-}
-
-.button.button__primary:hover,
-button:hover,
-input[type="submit"]:hover {
-  background: #46aee8;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 16px;
-}
-
-.button-container .button {
-  display: inline-block;
-  margin-right: 16px;
-}
-
-.button-container .button:last-child {
-  margin-right: 0;
-} */
-
 .hidden {
   display: none;
 }
