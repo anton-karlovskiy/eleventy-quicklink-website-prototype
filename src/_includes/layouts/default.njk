@@ -4,6 +4,9 @@
   <body>
     {% include "layouts/header.njk" %}
     <main class="page-main">
+      <div class="center">
+        <h2>{{ site.subtitle }}</h2>
+      </div>
       {{ content | safe }}
       {% include "layouts/footer.njk" %}
       <div class="back-to-top hidden">&uarr;</div>
