@@ -114,7 +114,7 @@ p, ul, address {
   border: none;
   white-space: nowrap;
   padding: 16px 0;
-  max-width: 756px;
+  max-width: 767px;
   z-index: 1;
 }
 
@@ -165,7 +165,7 @@ p, ul, address {
   padding: 16px 16px 0px;
   width: 90%;
   min-width: 288px;
-  max-width: 756px;
+  max-width: 767px;
   margin: 0px auto;
 }
 
@@ -216,7 +216,7 @@ p, ul, address {
   transition: all .3s ease;
 }
 
-@media (min-width: 756px) {
+@media (min-width: 767px) {
   body {
     font-size: 1.8rem;
   }
@@ -256,3 +256,19 @@ code {
   margin: 0;
   padding: .2em .4em;
 }
+
+/* ray test touch < */
+.markdown-body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px;
+}
+
+@media (max-width: 767px) {
+  .markdown-body {
+    padding: 15px;
+  }
+}
+/* ray test touch > */
