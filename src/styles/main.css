@@ -95,9 +95,12 @@ p, ul, address {
 }
 
 .page-header__logo-image {
-  display: block;
-  width: 100%;
-  height: auto;
+  background-image: url("/assets/images/logos/quicklink.svg");
+  width: 200px;
+  height: 75.23px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page-header__navigation a {
@@ -214,26 +217,35 @@ p, ul, address {
   body {
     font-size: 1.8rem;
   }
+
   .page-header {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding-top: 0;
   }
+
   .page-header__logo-link {
     display: inline-block;
     margin: 0 1.6rem 0 0;
     width: 250px;
     vertical-align: bottom;
   }
+
+  .page-header__logo-image {
+    width: 250px;
+    height: 94.05px;
+  }
+
   .page-header nav {
     display: inline-block;
   }
+
   .page-main {
     width: 75%;
   }
 }
-
+/* ray test touch < */
 /* code block */
 .highlight-line {
   display: inline-block;
@@ -244,9 +256,10 @@ p, ul, address {
 }
 
 code {
-  background-color: rgba(0,0,0,.07);
+  background-color: rgba(27,31,35,.05);
   border-radius: 3px;
   font-size: 85%;
   margin: 0;
   padding: .2em .4em;
 }
+/* ray test touch > */
