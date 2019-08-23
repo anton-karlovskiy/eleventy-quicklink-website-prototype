@@ -36,23 +36,8 @@ h3:first-child {
   margin: 1.2rem 0;
 }
 
-a {
-  text-decoration: none;
-  border-bottom: 1px solid;
-  color: #4f2ad6;
-  transition: border-color .15s ease;
-}
-
-a:hover {
-  border-color: transparent;
-}
-
-a.link__blue {
-  color: #00659d;
-}
-
-a.link__silent {
-  border: none;
+a.link__image-container {
+  display: inline-block;
 }
 
 p {
@@ -67,15 +52,30 @@ p, ul, address {
 .page-header {
   text-align: center;
   background: #ffffff;
-  padding-top: 1.6rem;
-  border-bottom: 4px solid #46aee8;
+  padding-top: 1.2rem;
+  /* TODO: double check */
+  /* border-bottom: 4px solid #46aee8; */
+  box-shadow: rgb(157, 165, 171) 0px 0px 2.25rem;
+}
+
+.page-header__title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 7px;
+}
+
+.page-header__subtitle {
+  font-weight: lighter;
+  font-size: .9em;
+  letter-spacing: normal;
+  line-height: normal;
 }
 
 .page-header__logo-link {
-  display: block;
-  margin: 0 auto;
-  width: 200px;
+  margin-right: 14px;
   border: none;
+  border-right: 2px solid rgb(197, 197, 197);
 }
 
 .page-header__logo-image {
@@ -145,6 +145,7 @@ p, ul, address {
 .page-main {
   padding: 16px 16px 0px;
   width: 90%;
+  /* TODO: double check */
   min-width: 288px;
   max-width: 767px;
   margin: 0px auto;
@@ -209,16 +210,17 @@ p, ul, address {
     padding-top: 0;
   }
 
+  .page-header__title {
+    padding: 14px;
+  }
+
   .page-header__logo-link {
     display: inline-block;
-    margin: 0 1.6rem 0 0;
-    width: 250px;
-    vertical-align: bottom;
   }
 
   .page-header__logo-image {
-    width: 250px;
-    height: 94.05px;
+    width: 222px;
+    height: 84px;
   }
 
   .page-header nav {
@@ -229,7 +231,7 @@ p, ul, address {
     width: 75%;
   }
 }
-/* ray test touch < */
+
 /* code block */
 .highlight-line {
   display: inline-block;
@@ -238,12 +240,3 @@ p, ul, address {
   text-decoration: none;
   color: inherit;
 }
-
-code {
-  background-color: rgba(27,31,35,.05);
-  border-radius: 3px;
-  font-size: 85%;
-  margin: 0;
-  padding: .2em .4em;
-}
-/* ray test touch > */

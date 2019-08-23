@@ -2,7 +2,7 @@
 {{ "## Use with" | markdown | safe }}
 <div class="center">
   {% for framework in site.useWithFrameworks %}
-    <a href="{{ framework.url }}" target="_blank" rel="noopener noreferrer" class="link__silent">
+    <a class="link__image-container" href="{{ framework.url }}" target="_blank" rel="noopener noreferrer">
       <img src="assets/images/logos/{{ framework.title }}.svg" width="128" alt="{{ framework.title }}" />
     </a>
   {% endfor %}
