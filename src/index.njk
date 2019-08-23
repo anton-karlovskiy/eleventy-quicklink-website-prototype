@@ -2,15 +2,12 @@
 title: Quicklink
 layout: layouts/base.njk
 description: Faster subsequent page-loads by prefetching in-viewport links during idle time.
-sectionTitle: "## Summary"
-sectionDescription:
-  items:
-    - "> Faster subsequent page-loads by prefetching in-viewport links during idle time."
+abstract:
+  title: "## Abstract"
+  summary: "> Faster subsequent page-loads by prefetching in-viewport links during idle time."
 ---
-{{ sectionTitle | markdown | safe }}
-{% for item in sectionDescription.items %}
-  {{ item | markdown | safe }}
-{% endfor %}
+{{ abstract.title | markdown | safe }}
+{{ abstract.summary | markdown | safe }}
 
 {% include "components/why-quicklink.njk" %}
 
