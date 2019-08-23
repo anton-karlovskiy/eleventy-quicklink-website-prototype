@@ -41,7 +41,7 @@
     },
     {
       "title": "vue",
-      "url": "https://github.com/GoogleChromeLabs/quicklink/"
+      "url": "https://nuxtjs.org/api/components-nuxt-link/"
     }
   ]
 }
