@@ -4,6 +4,8 @@
   max-width: 980px;
   margin: 0 auto;
   padding: 45px;
+  /* TODO: !important use does not look pefect */
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
 @media (max-width: 767px) {
