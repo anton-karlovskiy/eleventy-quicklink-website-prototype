@@ -198,7 +198,7 @@ p, ul, address {
   transition: all .3s ease;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 840px) {
   body {
     font-size: 1.8rem;
   }

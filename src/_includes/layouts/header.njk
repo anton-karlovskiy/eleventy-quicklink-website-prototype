@@ -1,3 +1,4 @@
+{# TODO: front matter adoption #}
 <header class="page-header">
   <div class="page-header__title">
     <a href="{{ '/' | url }}" class="page-header__logo-link">
@@ -7,15 +8,11 @@
   </div>
   <nav class="page-header__navigation">
     <ul>
-      <li>
-        <a href="{{ '/' | url }}" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
-      </li>
-      <li>
-        <a href="{{ '/api/' | url }}" {% if page.url == "/api/" %}class="active"{% endif %}>API</a>
-      </li>
-      <li>
-        <a href="{{ '/approach/' | url }}" {% if page.url == "/approach/" %}class="active"{% endif %}>Approach</a>
-      </li>
+      {% for sitePage in site.pages %}
+        <li>
+          <a href="{{ sitePage.route | url }}" {% if page.url == sitePage.route %}class="active"{% endif %}>{{ sitePage.caption }}</a>
+        </li>
+      {% endfor %}
     </ul>
   </nav>
 </header>

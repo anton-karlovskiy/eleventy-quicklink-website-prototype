@@ -5,16 +5,14 @@ description: Faster subsequent page-loads by prefetching in-viewport links durin
 sectionTitle: "## Summary"
 sectionDescription:
   items:
-    - "### Faster subsequent page-loads by prefetching in-viewport links during idle time."
-    - "### Once initialized, `quicklink` will automatically prefetch URLs for links that are in-viewport during idle time."
+    - "> Faster subsequent page-loads by prefetching in-viewport links during idle time."
+    - "> This project aims to be a drop-in solution for sites to prefetch links based on what is in the user's viewport. It also aims to be small (**< 1KB minified/gzipped**)."
 ---
 {{ sectionTitle | markdown | safe }}
 {% for item in sectionDescription.items %}
   {{ item | markdown | safe }}
 {% endfor %}
 
-{% include "components/quickstart-usage.njk" %}
-
-{% include "components/npm-usage.njk" %}
+{% include "components/usage.njk" %}
 
 {% include "components/use-with.njk" %}
