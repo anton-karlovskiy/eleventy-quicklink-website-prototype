@@ -11,12 +11,8 @@ sectionDescription:
     - "* **Checks if the user isn't on a slow connection** (using `navigator.connection.effectiveType`) or has data-saver enabled (using `navigator.connection.saveData`)"
     - "* **Prefetches URLs to the links** (using [`<link rel=prefetch>`](https://www.w3.org/TR/resource-hints/#prefetch) or XHR). Provides some control over the request priority (can switch to `fetch()` if supported)."
 ---
-{# ray test touch < #}
-<div class="markdown-body">
-  {{ sectionTitle | markdown | safe }}
-  {{ sectionDescription.summary | markdown | safe }}
-  {% for item in sectionDescription.items %}
-  {{ item | markdown | safe }}
-  {% endfor %}
-</div>
-{# ray test touch > #}
+{{ sectionTitle | markdown | safe }}
+{{ sectionDescription.summary | markdown | safe }}
+{% for item in sectionDescription.items %}
+{{ item | markdown | safe }}
+{% endfor %}
