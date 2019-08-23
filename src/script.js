@@ -1,15 +1,3 @@
-function lazyLoad() {
-    Array.prototype.forEach.call(document.querySelectorAll('div[data-type="lazy"]'), (el) => {
-        if ((el.getBoundingClientRect().top - window.innerHeight) <= 0) {
-            const newEl = document.createElement(el.dataset.tag);
-            Array.prototype.forEach.call(el.attributes, (attr) => {
-                newEl.setAttribute(attr.name, attr.value);
-            })
-            el.parentNode.replaceChild(newEl, el);
-        }
-    });
-}
-
 function initGoToTopBtn() {
     const goTopBtn = document.querySelector('.back-to-top');
 
@@ -43,6 +31,4 @@ function initGoToTopBtn() {
     goTopBtn.addEventListener('click', backToTop);
 };
 
-lazyLoad();
 initGoToTopBtn();
-window.addEventListener('scroll', lazyLoad, { passive: true });

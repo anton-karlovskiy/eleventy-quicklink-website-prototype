@@ -1,4 +1,3 @@
-const moment = require('moment-timezone');
 const markdownIt = require('markdown-it');
 const purifycss = require('purify-css');
 const htmlminifier = require('html-minifier');
@@ -19,11 +18,6 @@ module.exports = function(eleventyConfig) {
     const md = new markdownIt();
 
     return md.render(string);
-  });
-
-  // TODO: not confirmed if this filter might be needed
-  eleventyConfig.addNunjucksFilter("date", function(date, format = "YYYY-MM-DD") {
-    return moment(date).format(format);
   });
 
   // TODO: does not seem to be working
@@ -62,17 +56,6 @@ module.exports = function(eleventyConfig) {
   });
 
   return {
-    // ray test touch <
-    templateFormats: [
-      "njk",
-      "md"
-    ],
-
-    markdownTemplateEngine: "liquid",
-    htmlTemplateEngine: "njk",
-    dataTemplateEngine: "njk",
-    // ray test touch >
-
     dir: {
       input: "src",
       output: "build"
