@@ -1,10 +1,11 @@
 {# TODO: front matter adoption #}
 {{ "## Usage" | markdown | safe }}
 {{ "Once initialized, `quicklink` will automatically prefetch URLs for links that are in-viewport during idle time." | markdown | safe }}
+
 {{ "Quickstart:" | markdown | safe }}
 {% highlight "js" %}
 <!-- Include quicklink from dist -->
-<script src="https://unpkg.com/quicklink@1.0.0/dist/quicklink.umd.js"></script>
+<script src="dist/quicklink.umd.js"></script>
 <!-- Initialize (you can do this whenever you want) -->
 <script>
 quicklink();
@@ -20,13 +21,13 @@ window.addEventListener('load', () => {
 </script>
 {% endhighlight %}
 
-{{ "For use with [node](http://nodejs.org) and [npm](https://npmjs.com):" | markdown | safe }}
-{% highlight "js" %}
-npm install --save quicklink
-{% endhighlight %}
-
 {{ "ES Module import:" | markdown | safe }}
 {% highlight "js" %}
 import quicklink from "quicklink/dist/quicklink.mjs";
 quicklink();
 {% endhighlight %}
+
+{{ "The above options are best for multi-page sites. Single-page apps have a few options available for using quicklink with a router:" | markdown | safe }}
+{{ "* Call `quicklink()` once a navigation to a new route has completed" | markdown | safe }}
+{{ "* Call `quicklink()` against a specific DOM element / component" | markdown | safe }}
+{{ "* Call `quicklink({urls:[...]})` with a custom set of URLs to prefetch" | markdown | safe }}
