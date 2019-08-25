@@ -9,6 +9,9 @@ abstract:
 {{ abstract.title | markdown | safe }}
 {{ abstract.summary | markdown | safe }}
 
+{% include "components/github-star.njk" %}
+{% include "components/github-fork.njk" %}
+
 {% include "components/why-quicklink.njk" %}
 
 {% include "components/installation.njk" %}
