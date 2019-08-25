@@ -1,6 +1,7 @@
 const fetch = require("node-fetch");
 const flatcache = require("flat-cache");
 const path = require("path");
+const numeral = require('numeral');
 
 function getCacheKey() {
   const date = new Date();
@@ -19,9 +20,12 @@ module.exports = async function() {
     const newData = await fetch("https://api.github.com/repos/GoogleChromeLabs/quicklink")
       .then(res => res.json())
       .then(json => {
+        const stargazers = numeral(json.stargazers_count).format('0,0');
+        const forks = numeral(json.forks_count).format('0,0');
+
         return {
-          stargazers: json.stargazers_count,
-          forks: json.forks_count
+          stargazers,
+          forks
         };
       });
 
