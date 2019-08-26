@@ -3,10 +3,10 @@ title: Quicklink
 layout: layouts/base.njk
 description: Faster subsequent page-loads by prefetching in-viewport links during idle time.
 abstract:
-  title: "## Abstract"
+  title: "Abstract"
   summary: "> Faster subsequent page-loads by prefetching in-viewport links during idle time."
 ---
-{{ abstract.title | markdown | safe }}
+{% sectionTitle abstract.title %}
 {{ abstract.summary | markdown | safe }}
 
 {% include "components/github-star.njk" %}

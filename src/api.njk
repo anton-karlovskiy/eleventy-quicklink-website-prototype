@@ -4,7 +4,7 @@ layout: layouts/base.njk
 description: Faster subsequent page-loads by prefetching in-viewport links during idle time.
 sections:
   api:
-    title: "## API"
+    title: "API"
     summary: "`quicklink` accepts an optional options object with the following parameters:"
     content:
       items:
@@ -19,7 +19,7 @@ sections:
         - "* Explore detecting file-extension of resources and using [rel=preload](https://w3c.github.io/preload/) for high priority fetches"
         - "* Explore using [Priority Hints](https://github.com/WICG/priority-hints) for importance hinting"
   recipes:
-    title: "## Recipes"
+    title: "Recipes"
     content:
       items:
         -
@@ -125,7 +125,7 @@ bottomResource:
   caption: README on GitHub
   link: https://github.com/GoogleChromeLabs/quicklink/#api/
 ---
-{{ sections.api.title | markdown | safe }}
+{% sectionTitle sections.api.title %}
 {{ sections.api.summary | markdown | safe }}
 {% for item in sections.api.content.items %}
   {{ item | markdown | safe }}
@@ -135,7 +135,7 @@ TODO:
   {{ TODO | markdown | safe }}
 {% endfor %}
 
-{{ sections.recipes.title | markdown | safe }}
+{% sectionTitle sections.recipes.title %}
 {% for item in sections.recipes.content.items %}
   {{ item.caption | markdown | safe }}
   {{ item.explanation | markdown | safe }}
