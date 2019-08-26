@@ -1,3 +1,5 @@
+{% extends "layouts/normal-section-wrapper.njk" %}
+{% block section %}
 {% sectionTitle "Usage" %}
 {{ "Once initialized, `quicklink` will automatically prefetch URLs for links that are in-viewport during idle time." | markdown | safe }}
 
@@ -30,3 +32,4 @@ quicklink();
 {{ "* Call `quicklink()` once a navigation to a new route has completed" | markdown | safe }}
 {{ "* Call `quicklink()` against a specific DOM element / component" | markdown | safe }}
 {{ "* Call `quicklink({urls:[...]})` with a custom set of URLs to prefetch" | markdown | safe }}
+{% endblock %}

@@ -125,6 +125,9 @@ bottomResource:
   caption: README on GitHub
   link: https://github.com/GoogleChromeLabs/quicklink/#api/
 ---
+{# TODO: separate for section #}
+{% extends "layouts/normal-section-wrapper.njk" %}
+{% block section %}
 {% sectionTitle sections.api.title %}
 {{ sections.api.summary | markdown | safe }}
 {% for item in sections.api.content.items %}
@@ -143,6 +146,7 @@ TODO:
     {{ item.codesnippet }}
   {% endhighlight %}
   {% if item.extra %}
-   {{ item.extra | markdown | safe }}
+  {{ item.extra | markdown | safe }}
   {% endif %}
 {% endfor %}
+{% endblock %}

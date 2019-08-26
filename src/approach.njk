@@ -13,8 +13,11 @@ sections:
         - "* **Checks if the user isn't on a slow connection** (using `navigator.connection.effectiveType`) or has data-saver enabled (using `navigator.connection.saveData`)"
         - "* **Prefetches URLs to the links** (using [`<link rel=prefetch>`](https://www.w3.org/TR/resource-hints/#prefetch) or XHR). Provides some control over the request priority (can switch to `fetch()` if supported)."
 ---
+{% extends "layouts/normal-section-wrapper.njk" %}
+{% block section %}
 {% sectionTitle sections.howItWorks.title %}
 {{ sections.howItWorks.summary | markdown | safe }}
 {% for item in sections.howItWorks.content.items %}
   {{ item | markdown | safe }}
 {% endfor %}
+{% endblock %}

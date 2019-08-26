@@ -14,8 +14,11 @@ sections:
           description: A demo showing how to use Quicklink with Workbox for offline caching and links in the visible viewport.
           link: "* [Using Quicklink with Service Workers (via Workbox)](https://github.com/GoogleChromeLabs/quicklink/tree/master/demos/news-workbox)"
 ---
+{% extends "layouts/normal-section-wrapper.njk" %}
+{% block section %}
 {% sectionTitle sections.demo.title %}
 {% for item in sections.demo.content.items %}
   {{ item.description | markdown | safe }}
   {{ item.link | markdown | safe }}
 {% endfor %}
+{% endblock %}
