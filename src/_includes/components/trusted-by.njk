@@ -3,6 +3,7 @@
   <div class="flex-grid overflow-x-auto">
     {% for trustedByLogo in site.trustedByLogos %}
       <a class="flex-grid__item" href="{{ trustedByLogo.websiteUrl }}" target="_blank" rel="noopener noreferrer">
+        {# TODO: responsive sizing like "used-with" logos #}
         <img src="/assets/images/quicklink-used-logos/{{ trustedByLogo.logoFileName }}" style="max-width: 112px" alt="{{ trustedByLogo.logoAlt }}">
       </a>
     {% endfor %}

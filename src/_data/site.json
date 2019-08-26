@@ -29,22 +29,27 @@
   "useWithFrameworks": [
     {
       "title": "wordpress",
+      "logoFileName": "wordpress.svg",
       "url": "https://wordpress.org/plugins/quicklink/"
     },
     {
       "title": "drupal",
+      "logoFileName": "drupal.svg",
       "url": "https://www.drupal.org/project/quicklink/"
     },
     {
       "title": "react",
+      "logoFileName": "react.svg",
       "url": "https://github.com/HOUCe/react-quicklink-component/"
     },
     {
       "title": "angular",
+      "logoFileName": "angular.svg",
       "url": "https://github.com/mgechev/ngx-quicklink/"
     },
     {
       "title": "vue",
+      "logoFileName": "vue.svg",
       "url": "https://nuxtjs.org/api/components-nuxt-link/"
     }
   ],
