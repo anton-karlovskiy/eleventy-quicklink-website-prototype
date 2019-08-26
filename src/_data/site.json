@@ -47,5 +47,29 @@
       "title": "vue",
       "url": "https://nuxtjs.org/api/components-nuxt-link/"
     }
+  ],
+  "downloadList": [
+    {
+      "icon": {
+        "path": "/assets/icons/download-solid.svg",
+        "width": 13,
+        "alt": "download"
+      },
+      "link": {
+        "url": "https://unpkg.com/quicklink@1.0.1/dist/quicklink.umd.js",
+        "caption": "Build (< 1KB minified/gzipped)"
+      }
+    },
+    {
+      "icon": {
+        "path": "/assets/icons/chain-solid.svg",
+        "width": 13,
+        "alt": "chain"
+      },
+      "link": {
+        "url": "https://www.jsdelivr.com/package/npm/quicklink",
+        "caption": "CDN copies"
+      }
+    }
   ]
 }

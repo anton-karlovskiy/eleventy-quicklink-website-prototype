@@ -240,3 +240,12 @@ p, ul, address {
   text-decoration: none;
   color: inherit;
 }
+
+.page-main > ul.no-bullet {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list-icon img {
+  margin-right: 1rem;
+}

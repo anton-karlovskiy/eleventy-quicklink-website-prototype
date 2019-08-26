@@ -1,0 +1,9 @@
+{{ "## Download" | markdown | safe }}
+<ul class="no-bullet">
+  {% for downloadItem in site.downloadList %}
+    <li class="list-icon">
+      <img src="{{ downloadItem.icon.path }}" width="{{ downloadItem.icon.width }}" alt="{{ downloadItem.icon.alt }}">
+      <a href="{{ downloadItem.link.url }}" target="_blank" rel="noopener noreferrer">{{ downloadItem.link.caption }}</a>
+    </li>
+  {% endfor %}
+</ul>
