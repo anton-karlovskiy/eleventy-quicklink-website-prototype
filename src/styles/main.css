@@ -16,6 +16,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
+  
 }
 
 h1,
@@ -143,6 +144,7 @@ p, ul, address {
 }
 
 .page-main {
+  
   padding: 16px 16px 0px;
   width: 90%;
   /* TODO: double check */
@@ -201,6 +203,15 @@ p, ul, address {
 @media (min-width: 840px) {
   body {
     font-size: 1.8rem;
+    background-color: #eee;
+  }
+
+  main.page-main {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(157, 165, 171) 0px 4px 2.4rem -0.4rem;
+    margin-bottom: 3.2rem;
+    margin-top: 3.2rem;
+    padding-bottom: 1rem;
   }
 
   .page-header {
@@ -226,10 +237,6 @@ p, ul, address {
   .page-header nav {
     display: inline-block;
   }
-
-  .page-main {
-    width: 75%;
-  }
 }
 
 /* code block */
@@ -241,6 +248,7 @@ p, ul, address {
   color: inherit;
 }
 
+/* no bullet list */
 .page-main > ul.no-bullet {
   list-style-type: none;
   padding-left: 0;
