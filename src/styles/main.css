@@ -257,3 +257,20 @@ p, ul, address {
 .list-icon img {
   margin-right: 1rem;
 }
+
+/* trusted by logos grid */
+.flex-grid {
+  display: flex;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.flex-grid .flex-grid__item {
+  margin-left: 16px;
+}
+
+.flex-grid .flex-grid__item:last-child {
+  margin-right: 16px;
+}

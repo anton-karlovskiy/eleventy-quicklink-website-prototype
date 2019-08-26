@@ -34,7 +34,7 @@ module.exports = function(eleventyConfig) {
   //   return content;
   // });
 
-  eleventyConfig.addTransform('htmlminifier', async function(content, outputPath) {
+  eleventyConfig.addTransform("htmlminifier", async function(content, outputPath) {
     if (outputPath.endsWith(".html")) {
         return htmlminifier.minify(content, {
             collapseWhitespace: true,
@@ -52,6 +52,10 @@ module.exports = function(eleventyConfig) {
     };
 
     return content;
+  });
+
+  eleventyConfig.addNunjucksShortcode("sectionTitle", function(title) {
+    return `<h2>${title}</h2>`;
   });
 
   return {
