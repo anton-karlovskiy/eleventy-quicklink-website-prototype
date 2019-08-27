@@ -1,34 +1,48 @@
 function initGoToTopBtn() {
-    const goTopBtn = document.querySelector('.back-to-top');
+  const goTopBtn = document.querySelector('.back-to-top');
 
-    function trackScroll() {
-        const scrolled = window.pageYOffset;
-        const threshold = 400;
+  function trackScroll() {
+    const scrolled = window.pageYOffset;
+    const threshold = 400;
 
-        if (scrolled > threshold) {
-            goTopBtn.classList.remove('hidden');
-        }
-        if (scrolled < threshold) {
-            goTopBtn.classList.add('hidden');
-        }
+    if (scrolled > threshold) {
+        goTopBtn.classList.remove('hidden');
     }
-
-    function scrollToTop() {
-        const c = document.documentElement.scrollTop || document.body.scrollTop;
-        if (c > 0) {
-          window.requestAnimationFrame(scrollToTop);
-          window.scrollTo(0, c - c / 8);
-        }
+    if (scrolled < threshold) {
+        goTopBtn.classList.add('hidden');
     }
+  }
 
-    function backToTop() {
-        if (window.pageYOffset > 0) {
-            scrollToTop();
-        }
+  function scrollToTop() {
+    const c = document.documentElement.scrollTop || document.body.scrollTop;
+    if (c > 0) {
+      window.requestAnimationFrame(scrollToTop);
+      window.scrollTo(0, c - c / 8);
     }
+  }
 
-    window.addEventListener('scroll', trackScroll, { passive: true });
-    goTopBtn.addEventListener('click', backToTop);
+  function backToTop() {
+    if (window.pageYOffset > 0) {
+        scrollToTop();
+    }
+  }
+
+  window.addEventListener('scroll', trackScroll, { passive: true });
+  goTopBtn.addEventListener('click', backToTop);
 };
 
 initGoToTopBtn();
+
+// TODO: copied snippet lines have double '\n'
+const clipboard = new ClipboardJS('#copy-snippet-btn');
+clipboard.on('success', function(e) {
+  console.info('[clipboard success] Action:', e.action);
+  console.info('[clipboard success] Text:', e.text);
+  console.info('[clipboard success] Trigger:', e.trigger);
+
+  e.clearSelection();
+});
+clipboard.on('error', function(e) {
+  console.error('[clipboard error] Action:', e.action);
+  console.error('[clipboard error] Trigger:', e.trigger);
+});
