@@ -227,6 +227,32 @@ main.page-main {
   border: 0;
 }
 
+/* heading */
+main.page-main .heading {
+  /* TODO: opt for color */
+  color: hsl(226, 52%, 27%);
+  /* font-size: 2.3em; */
+  font-size: 32px;
+  font-weight: 900;
+  margin: 0;
+  /* margin: 24px 0 18px 0; */
+  border: 0;
+}
+
+main.page-main .heading em {
+  /* TODO: opt for color */
+  color: #d8217d;
+  font-style: normal;
+  white-space: nowrap;
+}
+
+@media (min-width: 600px) {
+  main.page-main .heading {
+    font-size: 2.3em;
+    margin: 24px 0 18px 0;
+  }
+}
+
 @media (min-width: 992px) {
   body {
     background-color: #eee;
@@ -264,5 +290,11 @@ main.page-main {
 
   .page-header nav {
     display: inline-block;
+  }
+
+  main.page-main .heading {
+    font-size: 2.3em;
+    font-weight: 900;
+    margin: 48px 64px 36px 64px;
   }
 }
