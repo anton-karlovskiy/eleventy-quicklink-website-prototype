@@ -4,26 +4,21 @@
 {{ "Once initialized, `quicklink` will automatically prefetch URLs for links that are in-viewport during idle time." | markdown | safe }}
 
 {{ "Quickstart:" | markdown | safe }}
+{# TODO: extract as a component #}
 <button id="copy-snippet-btn" type="button" data-clipboard-target="#snippet-for-copy">Copy snippet</button>
 <div id="snippet-for-copy">
 {% highlight "js" %}
-<!-- Include quicklink from dist -->
+<!-- Place this tag in your head or just before your close body tag. -->
+<!-- Include quicklink from CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/1.0.1/quicklink.umd.js"></script>
-<!-- Initialize (you can do this whenever you want) -->
-<script>
-quicklink();
-</script>
-{% endhighlight %}
-</div>
-
-{{ "For example, you can initialize after the `load` event fires:" | markdown | safe }}
-{% highlight "js" %}
+<!-- Initialize (you can do this whenever you want) For example, you can initialize after the 'load' event fires: -->
 <script>
 window.addEventListener('load', () => {
   quicklink();
 });
 </script>
 {% endhighlight %}
+</div>
 
 {{ "ES Module import:" | markdown | safe }}
 {% highlight "js" %}
