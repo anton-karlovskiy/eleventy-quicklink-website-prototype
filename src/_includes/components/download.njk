@@ -2,11 +2,13 @@
 {% block section %}
 {% sectionTitle "Download" %}
 <ul class="no-bullet">
-  {% for downloadItem in site.downloadList %}
-    <li class="list-icon">
-      <img src="{{ downloadItem.icon.path }}" width="{{ downloadItem.icon.width }}" alt="{{ downloadItem.icon.alt }}">
-      <a href="{{ downloadItem.link.url }}" target="_blank" rel="noopener noreferrer">{{ downloadItem.link.caption }}</a>
-    </li>
-  {% endfor %}
+  <li class="list-icon">
+    <img src="/assets/icons/download-solid.svg" width="13" alt="download">
+    <a href="https://cdnjs.cloudflare.com/ajax/libs/quicklink/{{ site.quicklinkVersion }}/quicklink.umd.js" target="_blank" rel="noopener noreferrer">Build (&lt {{ site.quicklinkSizeLimit }} minified/gzipped)</a>
+  </li>
+  <li class="list-icon">
+    <img src="/assets/icons/chain-solid.svg" width="13" alt="chain">
+    <a href="https://www.jsdelivr.com/package/npm/quicklink/" target="_blank" rel="noopener noreferrer">CDN copies</a>
+  </li>
 </ul>
 {% endblock %}
