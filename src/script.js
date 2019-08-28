@@ -33,7 +33,6 @@ function initGoToTopBtn() {
 
 initGoToTopBtn();
 
-// TODO: copied snippet lines have double '\n'
 const clipboard = new ClipboardJS('#copy-snippet-button');
 clipboard.on('success', function(e) {
   console.info('[clipboard success] Action:', e.action);

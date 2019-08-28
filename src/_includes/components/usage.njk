@@ -4,29 +4,35 @@
 {{ "Once initialized, `quicklink` will automatically prefetch URLs for links that are in-viewport during idle time." | markdown | safe }}
 
 {{ "Quickstart:" | markdown | safe }}
-{% highlight "js" %}
+{% markdownConvert %}
+```
 <!-- Include quicklink from dist -->
 <script src="dist/quicklink.umd.js"></script>
 <!-- Initialize (you can do this whenever you want) -->
 <script>
 quicklink();
 </script>
-{% endhighlight %}
+```
+{% endmarkdownConvert %}
 
 {{ "For example, you can initialize after the `load` event fires:" | markdown | safe }}
-{% highlight "js" %}
+{% markdownConvert %}
+```html
 <script>
 window.addEventListener('load', () => {
   quicklink();
 });
 </script>
-{% endhighlight %}
+```
+{% endmarkdownConvert %}
 
 {{ "ES Module import:" | markdown | safe }}
-{% highlight "js" %}
+{% markdownConvert %}
+```js
 import quicklink from "quicklink/dist/quicklink.mjs";
 quicklink();
-{% endhighlight %}
+```
+{% endmarkdownConvert %}
 
 {{ "The above options are best for multi-page sites. Single-page apps have a few options available for using quicklink with a router:" | markdown | safe }}
 {{ "* Call `quicklink()` once a navigation to a new route has completed" | markdown | safe }}

@@ -13,7 +13,6 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
     "html-minifier": "^4.0.0",
     "moment-timezone": "^0.5.26",
     "numeral": "^2.0.6",

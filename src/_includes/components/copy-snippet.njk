@@ -4,14 +4,16 @@
   <div class="secondary-font-color"><strong>Place this snippet in your head or just before your close body tag:<strong></div>
 
   <div class="snippet-for-copy">
-{% highlight "js" %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/1.0.1/quicklink.umd.js"></script>
-<script>
-window.addEventListener('load', () => {
-  quicklink();
-});
-</script>
-{% endhighlight %}
+  {% markdownConvert %}
+  ```html
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/1.0.1/quicklink.umd.js"></script>
+  <script>
+  window.addEventListener('load', () => {
+    quicklink();
+  });
+  </script>
+  ```
+  {% endmarkdownConvert %}
   </div>
 
   <div>

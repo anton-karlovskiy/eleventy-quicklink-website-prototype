@@ -1,7 +1,6 @@
 const markdownIt = require('markdown-it');
 const purifycss = require('purify-css');
 const htmlminifier = require('html-minifier');
-const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 // docs: https://www.11ty.io/docs/config/
 module.exports = function(eleventyConfig) {
@@ -10,9 +9,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/script.js");
   eleventyConfig.addPassthroughCopy("src/site.webmanifest");
   eleventyConfig.addPassthroughCopy("src/browserconfig.xml");
-
-  // TODO: double check since it has issues
-  eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
   eleventyConfig.addNunjucksFilter("markdown", function(string) {
     const md = new markdownIt();
@@ -35,7 +31,7 @@ module.exports = function(eleventyConfig) {
   //   return content;
   // });
 
-  eleventyConfig.addPairedShortcode("markdownPair", function(content) {
+  eleventyConfig.addPairedShortcode("markdownConvert", function(content) {
     const md = new markdownIt();
     return md.render(content);;
   });
