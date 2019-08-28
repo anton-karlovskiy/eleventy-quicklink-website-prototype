@@ -6,6 +6,8 @@
   padding: 45px;
   /* TODO: !important use does not look pefect, the github font looks better */
   font-family: Arial, Helvetica, sans-serif !important;
+  /* TODO: double check */
+  color: hsl(226, 52%, 27%) !important;
 }
 
 @media (max-width: 767px) {

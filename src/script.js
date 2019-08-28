@@ -34,13 +34,16 @@ function initGoToTopBtn() {
 initGoToTopBtn();
 
 // TODO: copied snippet lines have double '\n'
-const clipboard = new ClipboardJS('#copy-snippet-btn');
+const clipboard = new ClipboardJS('#copy-snippet-button');
 clipboard.on('success', function(e) {
   console.info('[clipboard success] Action:', e.action);
   console.info('[clipboard success] Text:', e.text);
   console.info('[clipboard success] Trigger:', e.trigger);
 
   e.clearSelection();
+  e.trigger.blur();
+  const notifyCopiedSnippet = document.querySelector(".notify-copied-snippet");
+  notifyCopiedSnippet.classList.add("notify-copied-snippet--displayed");
 });
 clipboard.on('error', function(e) {
   console.error('[clipboard error] Action:', e.action);

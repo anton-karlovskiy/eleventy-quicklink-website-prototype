@@ -228,20 +228,24 @@ main.page-main {
 }
 
 /* heading */
-main.page-main .heading {
+.primary-font-color {
   /* TODO: opt for color */
   color: hsl(226, 52%, 27%);
-  /* font-size: 2.3em; */
+}
+
+.secondary-font-color {
+  /* TODO: opt for color */
+  color: hsl(330, 73%, 49%);
+}
+
+main.page-main .heading {
   font-size: 32px;
   font-weight: 900;
   margin: 0;
-  /* margin: 24px 0 18px 0; */
   border: 0;
 }
 
 main.page-main .heading em {
-  /* TODO: opt for color */
-  color: #d8217d;
   font-style: normal;
   white-space: nowrap;
 }
