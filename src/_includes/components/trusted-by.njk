@@ -3,9 +3,10 @@
 {% sectionTitle "Trusted by" %}
 <div class="flex-grid overflow-x-auto">
   {% for trustedByLogo in site.trustedByLogos %}
-    <a class="flex-grid__item" href="{{ trustedByLogo.websiteUrl }}" target="_blank" rel="noopener noreferrer">
+    <a class="flex-grid__item text-center" href="{{ trustedByLogo.websiteUrl }}" target="_blank" rel="noopener noreferrer">
       {# TODO: responsive sizing like "used-with" logos #}
-      <img src="/assets/images/quicklink-used-logos/{{ trustedByLogo.logoFileName }}" style="max-width: 92px" alt="{{ trustedByLogo.logoAlt }}">
+      <img src="/assets/images/quicklink-used-logos/{{ trustedByLogo.logoFileName }}" style="max-width: 92px" alt="{{ trustedByLogo.companyName }}">
+      <p class="text-center"><strong>{{ trustedByLogo.companyName }}</strong></p>
     </a>
   {% endfor %}
 </div>

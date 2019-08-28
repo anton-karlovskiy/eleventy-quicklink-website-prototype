@@ -33,7 +33,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPairedShortcode("markdownConvert", function(content) {
     const md = new markdownIt();
-    return md.render(content);;
+    return md.render(content);
   });
 
   eleventyConfig.addTransform("htmlminifier", async function(content, outputPath) {
@@ -57,7 +57,8 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addNunjucksShortcode("sectionTitle", function(title) {
-    return `<h2>${title}</h2>`;
+    const md = new markdownIt();
+    return md.render(`## ${title}`);
   });
 
   return {
