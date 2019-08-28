@@ -49,3 +49,5 @@ clipboard.on('error', function(e) {
   console.error('[clipboard error] Action:', e.action);
   console.error('[clipboard error] Trigger:', e.trigger);
 });
+
+hljs.initHighlightingOnLoad();

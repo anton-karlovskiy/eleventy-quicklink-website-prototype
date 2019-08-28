@@ -11,6 +11,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/site.webmanifest");
   eleventyConfig.addPassthroughCopy("src/browserconfig.xml");
 
+  // TODO: double check since it has issues
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
   eleventyConfig.addNunjucksFilter("markdown", function(string) {
@@ -33,6 +34,11 @@ module.exports = function(eleventyConfig) {
 
   //   return content;
   // });
+
+  eleventyConfig.addPairedShortcode("markdownPair", function(content) {
+    const md = new markdownIt();
+    return md.render(content);;
+  });
 
   eleventyConfig.addTransform("htmlminifier", async function(content, outputPath) {
     if (outputPath.endsWith(".html")) {
