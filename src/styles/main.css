@@ -58,7 +58,7 @@ p, ul {
   border: none;
   white-space: nowrap;
   padding: 16px 0;
-  max-width: 767px;
+  min-width: 50px;
   z-index: 1;
 }
 
