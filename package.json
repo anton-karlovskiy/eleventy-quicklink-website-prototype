@@ -15,7 +15,6 @@
   "dependencies": {
     "html-minifier": "^4.0.0",
     "moment-timezone": "^0.5.26",
-    "numeral": "^2.0.6",
-    "purify-css": "^1.2.5"
+    "numeral": "^2.0.6"
   }
 }

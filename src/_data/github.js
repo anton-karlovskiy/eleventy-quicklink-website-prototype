@@ -17,7 +17,7 @@ module.exports = async function() {
     console.log( "Fetching new github stargazers count…" );
 
     // GitHub API: https://developer.github.com/v3/repos/#get
-    const newData = await fetch("https://api.github.com/repos/GoogleChromeLabs/quicklink")
+    const newData = await fetch("https://api.github.com/repos/GoogleChromeLabs/quicklink/")
       .then(res => res.json())
       .then(json => {
         const stargazers = numeral(json.stargazers_count).format('0,0');

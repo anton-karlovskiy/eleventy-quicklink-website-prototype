@@ -199,18 +199,18 @@ main.page-main {
   margin: 16px 0;
 }
 
-.section-pink__text {
+.highlighted-section__text {
   /* TODO: opt for bg color */
   /* background-color: #d8217d; */
   background-color: #283646;
   color: #fff;
 }
 
-.section-pink__text p {
+.highlighted-section__text p {
   color: #fff;
 }
 
-.highlighted-section.section-pink__text h2 {
+.highlighted-section.highlighted-section__text h2 {
   border: 0;
 }
 

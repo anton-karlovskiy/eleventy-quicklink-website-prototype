@@ -1,8 +1,6 @@
 const markdownIt = require('markdown-it');
-const purifycss = require('purify-css');
 const htmlminifier = require('html-minifier');
 
-// docs: https://www.11ty.io/docs/config/
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/styles");
@@ -15,21 +13,6 @@ module.exports = function(eleventyConfig) {
 
     return md.render(string);
   });
-
-  // TODO: does not seem to be working
-  // eleventyConfig.addTransform('purifycss', async function(content, outputPath) {
-  //   if (outputPath.endsWith(".html")) {
-  //       return new Promise((resolve) => {
-  //           purifycss(content, ['build/styles/main.css'], {
-  //               minify: true
-  //           }, (css) => {
-  //               resolve(content.replace('<link rel="stylesheet" href="/styles/main.css">', `<style>${css}</style>`));
-  //           });
-  //       });
-  //   };
-
-  //   return content;
-  // });
 
   eleventyConfig.addPairedShortcode("markdownConvert", function(content) {
     const md = new markdownIt();
