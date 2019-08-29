@@ -273,10 +273,16 @@ main.page-main .heading em {
   }
 
   .page-header {
+    padding-top: 0;
+  }
+
+  .page-header-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-top: 0;
+    min-width: 200px;
+    max-width: 980px;
+    margin: 0 auto;
   }
 
   .page-header__title {
