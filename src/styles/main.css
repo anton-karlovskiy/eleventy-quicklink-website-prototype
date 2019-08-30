@@ -237,22 +237,16 @@ main.page-main .heading em {
   white-space: nowrap;
 }
 
-.large-github-star-fork {
-  display: none;
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: 600px) {
   main.page-main .heading {
-    font-size: 2.3em;
+    font-size: 2em;
     margin: 24px 0 18px 0;
-  }
-
-  .github-star-fork {
-    display: none;
-  }
-
-  .large-github-star-fork {
-    display: block;
   }
 }
 
@@ -266,9 +260,7 @@ main.page-main .heading em {
     box-shadow: 0 1px 6px rgba(57,73,76,0.35);
     margin-top: 3.2rem;
     margin-bottom: 3.2rem;
-    padding-top: 1rem;
     padding-bottom: 1rem;
-    
   }
 
   .page-header {
@@ -302,8 +294,6 @@ main.page-main .heading em {
   }
 
   main.page-main .heading {
-    font-size: 2.3em;
-    font-weight: 900;
-    margin: 48px 64px 36px 64px;
+    margin: 24px 0;
   }
 }

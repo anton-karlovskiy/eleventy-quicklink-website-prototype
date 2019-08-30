@@ -1,5 +1,12 @@
-{% extends "layouts/highlighted-section-wrapper.njk" %}
+{% extends "layouts/normal-section-wrapper.njk" %}
 {% block section %}
-{% sectionTitle "Why Quicklink?" %}
+<h2 class="flex-between-center">
+<span>Why Quicklink?</span>
+
+<div>
+{% include "components/github-star.njk" %}
+{% include "components/github-fork.njk" %}
+</div>
+</h2>
 {{ "This project aims to be a drop-in solution for sites to prefetch links based on what is in the user's viewport. It also aims to be small (**< 1KB minified/gzipped**)." | markdown | safe }}
 {% endblock %}
