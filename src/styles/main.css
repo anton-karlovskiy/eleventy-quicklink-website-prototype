@@ -33,6 +33,7 @@ p, ul {
 
 .page-header__subtitle {
   font-size: 1em;
+  margin: 0;
 }
 
 .page-header__logo-link {
@@ -43,8 +44,8 @@ p, ul {
 
 .page-header__logo-image {
   background-image: url("/assets/images/logos/quicklink.svg");
-  width: 200px;
-  height: 75.23px;
+  width: 160px;
+  height: 60.2px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,8 +57,8 @@ p, ul {
   text-decoration: none;
   border: none;
   white-space: nowrap;
-  padding: 16px 0;
-  min-width: 50px;
+  padding: 8px 0;
+  min-width: 40px;
   z-index: 1;
 }
 
@@ -191,7 +192,7 @@ main.page-main {
 }
 
 .normal-section {
-  padding: 0 24px;
+  padding: 0 8px;
 }
 
 .highlighted-section {
@@ -226,7 +227,7 @@ main.page-main {
 }
 
 main.page-main .heading {
-  font-size: 32px;
+  font-size: 1.5em;
   font-weight: 900;
   margin: 0;
   border: 0;
@@ -243,10 +244,36 @@ main.page-main .heading em {
   align-items: center;
 }
 
+.large-github {
+  display: none;
+}
+
 @media (min-width: 600px) {
   main.page-main .heading {
     font-size: 2em;
     margin: 24px 0 18px 0;
+  }
+
+  .page-header__navigation a {
+    padding: 16px 0;
+    min-width: 50px;
+  }
+
+  .page-header__subtitle {
+    margin: 1em 0;
+  }
+
+  .page-header__logo-image {
+    width: 200px;
+    height: 75.23px;
+  }
+
+  .small-github { 
+    display: none;
+  }
+
+  .large-github { 
+    display: block;
   }
 }
 
@@ -295,5 +322,14 @@ main.page-main .heading em {
 
   main.page-main .heading {
     margin: 24px 0;
+  }
+
+  .normal-section {
+    padding: 0 24px;
+  }
+  
+  .highlighted-section {
+    padding: 16px 24px;
+    margin: 16px 0;
   }
 }

@@ -14,4 +14,8 @@
   .markdown-body {
     padding: 15px;
   }
+
+  .markdown-body h2 {
+    font-size: 1.2em !important;
+  }
 }
